@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 li {
   list-style: none;
@@ -31,7 +32,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 nav ul {
   display: flex;
@@ -59,6 +59,9 @@ main
 
 #about ul li:first-child {
   margin-bottom: 50px;
+}
+#about .profile_text {
+  margin-top: 50px;
 }
 
 #works {
@@ -149,4 +152,85 @@ footer {
 footer p {
   height: 100%;
   
+}
+/* responsive */
+@media screen and (max-width: 600px) {
+  #header {
+    margin: 10px 100px;
+    display: block;
+    align-items: center;
+  }
+  .section_title {
+    margin: 80px 20px;
+  }
+  .site_title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .mainvisual{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* section about */
+  #about {
+    margin: 10px 10px;
+  }
+  #works {
+    margin: 10px 20px;
+  }
+  #works ul {
+    display: block;
+    width: 100%;
+  }
+  #works ul li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  /* section News */
+  #news {
+    margin: 10px 20px;
+    padding: 0;
+  }
+  #news dl {
+    display: block;
+    text-align: left;
+  }
+  #news dl dt {
+    width: 100%;
+    border-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  #news dl dd {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  /* section contact */
+  #contact {
+    margin: 10px 20px;
+    padding: 0;
+  }
+  #contact dl {
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  #contact dl dt {
+    width: 20%;
+    padding: 0;
+    margin-top: 10px;
+    
+  }
+  #contact dl dd {
+    width: 100%;
+    padding: 0;
+  }
+  /* footer */
+  footer {
+    padding: 10px 0;
+    margin-top: 100px;
+  }
 }
